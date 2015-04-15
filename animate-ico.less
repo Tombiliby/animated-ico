@@ -1,7 +1,7 @@
 // Mixin
 #ico-nav {
-	.to-cross(@color:red, @weight:5px, @marge: 7px){
-		& { width: 40px; }
+	.to-cross(@color:red, @width:35px, @weight:5px, @marge: 7px){
+		& { width: @width; }
 		&:before, &:after, span {
 			content: "";
 			background: @color;
@@ -36,5 +36,5 @@
 
 
 .btn-menu-side-toggle {
-	#ico-nav .to-cross(blue, 2px, 4px);
+	#ico-nav .to-cross(green, 30px, 5px, 4px);
 }
